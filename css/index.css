@@ -1,0 +1,350 @@
+
+.banner{
+	position: relative;
+	height: 460px;
+	overflow: hidden;
+}
+.banner:hover i{
+	opacity: .5;
+}
+.banner a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.current{
+	z-index: 1;
+}
+.banner i{
+	position: absolute;
+	top: 208px;
+	width: 25px;
+	height: 44px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.banner i:hover{
+	opacity: 1;
+}
+.previous{
+	left: 66px;
+	background: url(../images/flex-prev.png) no-repeat;
+}
+.next{
+	right: 66px;
+	background: url(../images/flex-next.png) no-repeat;
+}
+
+.nav{
+	position: relative;
+	height: 99px;
+	padding: 20px;
+	border-bottom: 1px solid rgb(217,217,217);
+}
+.nav_first{
+	float: left;
+	width: 442px;
+	height: 100px;
+	border-right: 1px solid rgb(238,238,238);
+	position: relative;
+}
+.down{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 9px;
+	height: 5px;
+	background: url(../images/index_sprite_v2.png) no-repeat 0px -130px;
+	cursor: pointer;
+	z-index: 1;
+}
+.navmain{
+	position: relative;
+	border: 2px solid rgb(255,255,255);
+	border-bottom: 1px solid rgb(255,255,255);
+	background: rgb(255,255,255);
+}
+.brand{
+	padding-left: 24px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.brand_type{
+	padding-left: 24px;
+	height: 60px;
+}
+.brand_type a{
+	float: left;
+	width: 48px;
+	overflow: hidden;
+}
+.brand_type img{
+	width: 32px;
+	height: 24px;
+	margin: 0 auto;
+	display: block;
+}
+.brand_type span{
+	text-align: center;
+	line-height: 30px;
+	display: block;
+	color: rgb(102,102,102);
+	cursor: pointer;
+}
+.nav_first:hover .down{
+	background: url(../images/index_sprite_v2.png) no-repeat 0px -135px;
+}
+.brand_type span:hover{
+	color: rgb(255,87,26);
+}
+.nav_second{
+	float: left;
+	width: 440px;
+	height: 100px;
+	border-right: 1px solid rgb(238,238,238);
+	position: relative;
+}
+.car_type{
+	padding: 0px 10px 0px 24px;
+	height: 57px;
+	overflow: hidden;
+}
+.car_type a{
+	float: left;
+	text-align: center;
+	width: 56px;
+	height: 55px;
+	display: block;
+}
+.model{
+	width: 50px;
+	height: 20px;
+	margin: 0 auto;
+	margin-top: 4px;
+	background: url(../images/car_modal_sprite.png) no-repeat;
+	opacity: 1;
+}
+.car_type span{
+	text-align: center;
+	line-height: 30px;
+	display: block;
+	color: rgb(102,102,102);
+	cursor: pointer;
+}
+.car_type a:hover .model{
+	opacity: 0.6;
+}
+.car_type a:hover span{
+	color: rgb(255,87,26);
+}
+.nav_second:hover .down{
+	background: url(../images/index_sprite_v2.png) no-repeat 0px -135px;
+}
+.nav_third{
+	float: left;
+	width: 290px;
+	height: 100px;
+}
+.price{
+	padding-left: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.price_range{
+	padding-left: 24px;
+}
+.price_range a{
+	margin: 5px 5px 7px 5px;
+	width: 51px;
+	color: rgb(102,102,102);
+	display: inline-block;
+}
+.price_range a:hover{
+	color: rgb(255,87,26);
+}
+.main{
+	padding-top:90px;
+	padding-bottom: 80px;
+	overflow:hidden;
+	background-color:rgb(242, 242, 242);
+}
+.main h1{
+	text-align:center;
+	font-size:32px;
+	color:rgb(51, 51, 51);
+}
+.main p{
+	color:rgb(153, 153, 153);
+	line-height: 40px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	text-align:center;
+}
+.container{
+	width: 1220px;
+}
+.container a{
+	float: left;
+	margin: 40px 30px 0 10px;
+	padding-left: 285px;
+	width: 285px;
+	height: 240px;
+	background-color: white;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.container h2{
+	margin-top: 34px;
+	font-size: 20px;
+	color: rgb(68,68,68);
+}
+.container p{
+	margin-top: 16px;
+	font-size: 14px;
+}
+.container img{
+	margin-top: -11px;
+	width: 160px;
+	height: 105px;
+	transition: margin-left .25s;
+}
+.container a:hover{
+	box-shadow:0 4px 8px 0 rgb(182, 182, 182);
+}
+.main .container a:hover h2{
+	color:rgb(255, 88, 26);
+}
+.main .container a:hover img{
+	margin-left:-10px;
+}
+.ad{
+	margin: 80px 0;
+	overflow: hidden;
+}
+.ad h1{
+	text-align:center;
+	font-size:32px;
+	color:rgb(51, 51, 51);
+}
+.ad p{
+	color:rgb(153, 153, 153);
+	margin-top: 11px;
+	font-size: 16px;
+	text-align:center;
+	margin-bottom: 64px;
+}
+.ad1{
+	float: left;
+	padding: 10px 32px 0 32px;
+	width: 339px;
+	height: 180px;
+	border-right: 1px solid rgb(230,230,230);
+	position: relative;
+}
+.ad1 img{
+	float: left;
+	width: 64px;
+	height: 64px;
+}
+.ad2{
+	height: 64px;
+	padding-left: 85px;
+	padding-top: 4px;
+}
+.ad2 h3{
+	font-size: 20px;
+	color: rgb(51,51,51);
+}
+.ad2 h4{
+	margin-top: 8px;
+	font-size: 14px;
+	color: rgb(51,51,51);
+}
+.ad3{
+	margin-top: 14px;
+}
+.text1{
+	line-height: 16px;
+	color: rgb(153,153,153);
+}
+.ad4{
+	margin-top: 20px;
+	font-size: 14px;
+	color: rgb(255,87,26);
+	cursor: pointer;
+}
+.ad5{
+	margin-top: 36px;
+	font-size: 14px;
+	color: rgb(255,87,26);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
